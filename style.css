@@ -1,0 +1,129 @@
+:root {
+  --primary1: #468898
+  --primary2: #A7D1DB
+  --secondary11: #468898
+  --secondary12: #185E6E
+  --secondary21: #2CAECC
+  --secondary22: #4FBED8
+  --textLight: white;
+  --textDark: black;
+ }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+  img {
+    width: 30%;
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+  }
+
+
+  html {
+    height: 100%
+  }
+
+
+
+  body {
+    height: 100%;
+   margin: 0px;  /*removes default style*/
+   display: flex;  /*enables flex content for its children*/
+   flex-direction: column;
+   box-sizing: border-box;
+   font-family: 'Pacifico', cursive;
+   background: #468898;
+   }
+
+
+/* nav {
+    height: 100%;
+    font-family: 'Pacifico', cursive;
+    dispaly: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+} */
+
+
+.main-nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: capitalize;
+  color: white;
+  font-family: 'Pacifico', cursive;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: #468898 ; */
+  background: #777;
+}
+
+
+
+
+
+
+li a {
+  display: block;
+  color: black;
+  /* text-align: center; */
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color:  #0ED8EA;
+}
+
+main {
+  min-height: 400px;
+  min-width: 400px;
+  background: #468898;
+  padding: 40px 20px;
+  border-radius: 5px;
+
+}
+
+
+h1 {
+  background-color: #468898;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+
+h2 {
+  background-color: #2CAECC;
+  text-align: center;
+  padding: 40px;
+  font-family: 'Pacifico', cursive;
+  box-shadow: 22px 2px 17px 5px #0B3C4C;
+box-shadow: 22px 2px 17px 5px #0B3C4C;
+}
+
+ul {
+    font-family: 'Pacifico', cursive;
+}
+
+p {
+    font-family: 'Pacifico', cursive;
+}
+
+footer{
+  font-family: 'Pacifico', cursive;
+}
+
+.rotate{
+  transform:rotateZ(90deg);
+}

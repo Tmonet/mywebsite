@@ -1,13 +1,4 @@
-:root {
-  --primary1: #468898
-  --primary2: #A7D1DB
-  --secondary11: #468898
-  --secondary12: #185E6E
-  --secondary21: #2CAECC
-  --secondary22: #4FBED8
-  --textLight: white;
-  --textDark: black;
- }
+
 
 * {
   box-sizing: border-box;
@@ -24,6 +15,11 @@
     }
 
 
+    .rotate{
+      transform:rotateZ(90deg);
+    }
+
+
   html {
     height: 100%
   }
@@ -33,11 +29,31 @@ display: grid;
 
 }
 
+.center{
+  text-align: center;
+}
 
+.suppliesList {
+  margin: 20px;
+  text-align: left;
+  background-color: #2CAECC;
+
+    padding: 40px;
+    font-family: 'Pacifico', cursive;
+    box-shadow: 22px 2px 17px 5px #0B3C4C;
+    box-shadow: 22px 2px 17px 5px #0B3C4C;
+}
+
+.suppliesList li{
+  margin: 10px 0 10px 0;
+  list-style-type: square;
+  /* list-style-image: url("paintbrush.png"); */
+
+}
 
   body {
     height: 100%;
-   margin: 0px;  /*removes default style*/
+   margin: 0;  /*removes default style*/
    display: flex;  /*enables flex content for its children*/
    flex-direction: column;
    box-sizing: border-box;
@@ -54,30 +70,26 @@ display: grid;
     align-items: center;
     list-style-type: none;
 } */
+  header {
+  }
 
-
-.main-nav {
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style-type: none;
-  text-decoration: none;
-  font-size: 2em;
-  text-transform: capitalize;
-  color: white;
-  font-family: 'Pacifico', cursive;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  /* background-color: #468898 ; */
-  background: #777;
-}
-
-
-
-
-
+  .main-nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: capitalize;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #468898 ; */
+    background: #777;
+  }
 
 li a {
   display: block;
@@ -93,8 +105,8 @@ li a:hover {
 }
 
 main {
-  min-height: 400px;
-  min-width: 400px;
+  /* min-height: 400px;
+  min-width: 400px; */
   background: #468898;
   padding: 40px 20px;
   border-radius: 5px;
@@ -117,6 +129,34 @@ h2 {
 box-shadow: 22px 2px 17px 5px #0B3C4C;
 }
 
+h3 {
+  background-color:  #468898;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+}
+
+h4{
+  background-color:  #468898;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+}
+
+h5 {
+  background-color:  #468898;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+}
+
+h6{
+  background-color:  #468898;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+}
+
 ul {
     font-family: 'Pacifico', cursive;
 }
@@ -125,10 +165,33 @@ p {
     font-family: 'Pacifico', cursive;
 }
 
-footer{
+footer {
   font-family: 'Pacifico', cursive;
+  margin-top: 10px;
 }
 
-.rotate{
-  transform:rotateZ(90deg);
+@media only screen and (max-width:800px) {
+  body {
+    height: 100%;
+    width:90%;
+   margin: 0px;  /*removes default style*/
+   display: flex;  /*enables flex content for its children*/
+   flex-direction: column;
+   box-sizing: border-box;
+   font-family: 'Pacifico', cursive;
+   background: #468898;
+   }
+}
+
+@media only screen and (max-width:500px) {
+  body {
+    height: 100%;
+    width:90%;
+   margin: 0px;  /*removes default style*/
+   display: flex;  /*enables flex content for its children*/
+   flex-direction: column;
+   box-sizing: border-box;
+   font-family: 'Pacifico', cursive;
+   background: #468898;
+   }
 }
